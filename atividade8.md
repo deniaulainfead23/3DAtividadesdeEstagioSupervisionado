@@ -1,4 +1,4 @@
-# Atividade 7 – Chatbot, IA Generativa ou Agente de IA?
+# Atividade 8 – Chatbot, IA Generativa ou Agente de IA?
 
 ## 🎯 Objetivo
 
