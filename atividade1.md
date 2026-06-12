@@ -33,7 +33,8 @@ Relatório de validação das respostas.
 | Resposta | | |
 | Análise | | |
 
-### Reflexão
+### Reflexão - na FOLHA DE RESPOSTAS
+📌 **Orientação Geral:** Todas as respostas desta atividade devem ser registradas de forma manuscrita na folha de atividades de estágio.
 
 - Qual ferramenta apresentou respostas mais precisas?
 - Houve informações incorretas?
@@ -43,7 +44,8 @@ Relatório de validação das respostas.
 ---
 
 
-## Reflexão
+### Reflexão - na FOLHA DE RESPOSTAS
+📌 **Orientação Geral:** Todas as respostas desta atividade devem ser registradas de forma manuscrita na folha de atividades de estágio.
 
 Qual prompt gerou a melhor resposta? Justifique sua resposta.
 
