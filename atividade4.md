@@ -65,3 +65,58 @@ Crie um painel (1 slide ou 1 página) contendo:
 - Conceito de LGPD
 - Quadro comparativo
 - Sua análise sobre o uso de dados em IAs Generativas
+
+
+## 📝 Reflexão para a Folha de Respostas
+
+Após concluir a atividade, responda às questões abaixo com suas próprias palavras.
+
+1. Por que o Marco Civil da Internet é importante para os usuários da internet?
+
+____________________________________________________________
+
+____________________________________________________________
+
+2. Qual a importância da LGPD para a proteção dos dados pessoais?
+
+____________________________________________________________
+
+____________________________________________________________
+
+3. Quais riscos podem existir ao compartilhar informações pessoais em ferramentas de IA Generativa?
+
+____________________________________________________________
+
+____________________________________________________________
+
+4. Que cuidados você adotaria antes de inserir informações em uma IA?
+
+____________________________________________________________
+
+____________________________________________________________
+
+5. Na sua opinião, qual deve ser a responsabilidade dos usuários ao utilizar Inteligência Artificial?
+
+____________________________________________________________
+
+____________________________________________________________
+
+## Conclusão
+
+Escreva um pequeno texto (5 a 10 linhas) explicando a relação entre Inteligência Artificial, privacidade e proteção de dados.
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
