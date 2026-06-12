@@ -2,169 +2,66 @@
 
 ## Objetivo
 
-Compreender como as legislações relacionadas à internet, proteção de dados e Inteligência Artificial impactam o desenvolvimento e o uso de sistemas computacionais.
+Compreender como a legislação influencia o uso da Inteligência Artificial e a proteção de dados.
 
 ---
 
-## Etapa 1 – Pesquisa Legislativa
+## Parte 1 – Pesquisa Rápida
 
-Pesquise os seguintes documentos:
+Pesquise e responda:
 
-### Brasil
+### Marco Civil da Internet
 
-- Marco Civil da Internet (Lei nº 12.965/2014)
-- LGPD – Lei Geral de Proteção de Dados (Lei nº 13.709/2018)
+- O que é?
+- Qual seu principal objetivo?
 
-### Internacional
+### LGPD
 
-Pesquise pelo menos uma das legislações abaixo:
-
-- GDPR (União Europeia)
-- AI Act (União Europeia)
-- NIST AI Risk Management Framework (Estados Unidos)
-- UNESCO Recommendation on the Ethics of Artificial Intelligence
+- O que é?
+- O que são dados pessoais?
 
 ---
 
-## Etapa 2 – Quadro Comparativo
+## Parte 2 – Quadro Comparativo
 
-Preencha a tabela:
-
-| Aspecto | Marco Civil | LGPD | GDPR | AI Act |
-|----------|------------|------|------|---------|
-| Objetivo | | | | |
-| Quem protege | | | | |
-| Penalidades | | | | |
-| Aplicação em IA | | | | |
-| Aplicação em Sistemas | | | | |
+| Aspecto | Marco Civil | LGPD |
+|----------|-------------|------|
+| Ano de criação | | |
+| Objetivo | | |
+| Quem protege | | |
 
 ---
 
-## Etapa 3 – Análise de Caso Real
+## Parte 3 – Análise de IA
 
-Escolha uma ferramenta de IA Generativa:
-
-- ChatGPT
-- Gemini
-- Claude
-- Copilot
-- Outra
+Escolha uma IA Generativa (ChatGPT, Gemini, Copilot ou outra).
 
 Responda:
 
-1. Quais dados a ferramenta pode coletar?
-2. Existe política de privacidade?
-3. Os dados podem ser utilizados para treinamento?
-4. Há riscos para o usuário?
-5. A ferramenta parece estar adequada à LGPD?
+1. Ela solicita informações do usuário?
+2. Ela possui política de privacidade?
+3. Você forneceria seus dados pessoais para essa ferramenta? Justifique.
 
 ---
 
-## Etapa 4 – Auditoria de IA
+## Parte 4 – Reflexão
 
-Utilize uma IA Generativa e solicite:
+Leia a situação:
 
-```text
-Crie uma ficha cadastral para uma escola.
-```
+> Um estudante envia CPF, endereço e telefone para uma IA Generativa para realizar uma atividade.
 
-Analise as informações solicitadas.
+Responda:
 
-Classifique os dados em:
-
-- Dados pessoais
-- Dados pessoais sensíveis
-- Dados públicos
-- Dados desnecessários
-
-Verifique se o formulário estaria adequado à LGPD.
+- Essa ação é segura?
+- Quais cuidados deveriam ser adotados?
 
 ---
 
-## Etapa 5 – Situações-Problema
+## Produto
 
-Analise os cenários abaixo:
+Crie um painel (1 slide ou 1 página) contendo:
 
-### Caso 1
-
-Uma empresa utiliza currículos enviados por candidatos para treinar um sistema de IA sem informar os candidatos.
-
-Isso está de acordo com a LGPD?
-
-### Caso 2
-
-Uma escola utiliza fotos dos alunos para treinar uma IA de reconhecimento facial.
-
-Quais cuidados legais devem ser adotados?
-
-### Caso 3
-
-Um estudante utiliza IA para gerar um trabalho acadêmico e entrega o conteúdo sem revisão.
-
-Quais riscos éticos e acadêmicos estão envolvidos?
-
----
-
-## Etapa 6 – Desenvolvimento de Soluções
-
-Proponha pelo menos três boas práticas para o uso responsável da IA Generativa em:
-
-- Empresas
-- Escolas
-- Universidades
-- Órgãos Públicos
-
----
-
-## Desafio Extra
-
-Pesquise um caso real envolvendo:
-
-- Vazamento de dados
-- Uso indevido de IA
-- Deepfake
-- Violação da LGPD
-
-Apresente:
-
-- O que aconteceu
-- Quem foi afetado
-- Qual legislação se aplica
-- Como o problema poderia ter sido evitado
-
----
-
-## Produto Final
-
-### Painel Jurídico Digital
-
-O painel deve conter:
-
-- Linha do tempo das legislações
+- Conceito de Marco Civil
+- Conceito de LGPD
 - Quadro comparativo
-- Análise do caso real
-- Resultado da auditoria de IA
-- Situações-problema resolvidas
-- Recomendações para uso ético da IA
-
-### Entrega
-
-Pode ser realizada em:
-
-- Canva
-- Google Apresentações
-- PowerPoint
-- Infográfico
-- Site simples
-
----
-
-## Competências Desenvolvidas
-
-- Cidadania Digital
-- Proteção de Dados
-- Ética em IA
-- Governança de Tecnologia
-- Segurança da Informação
-- Pensamento Crítico
-- Legislação Aplicada à Computação
+- Sua análise sobre o uso de dados em IAs Generativas
