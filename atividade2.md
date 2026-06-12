@@ -82,7 +82,8 @@ Digite seu prompt aqui
 ```
 
 ---
-
+### Na FOLHA DE RESPOSTAS
+📌 **Orientação Geral:** Todas as respostas desta atividade devem ser registradas de forma manuscrita na folha de atividades de estágio.
 ## Comparação dos Resultados
 
 | Critério | Prompt 1 | Prompt 2 | Prompt 3 |
