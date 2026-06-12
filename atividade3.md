@@ -135,7 +135,8 @@ ______________________________________________________
 
 ---
 
-## Reflexão Final
+### Reflexão - na FOLHA DE RESPOSTAS
+📌 **Orientação Geral:** Todas as respostas desta atividade devem ser registradas de forma manuscrita na folha de atividades de estágio.
 
 1. As respostas das IAs foram iguais?
 2. O idioma influenciou as respostas?
