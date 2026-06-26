@@ -238,7 +238,8 @@ Após a instalação, o **ContaCerta** aparecerá no Menu Iniciar do Windows com
 
 # 🤖 CODIGOS
 
-index.html
+# index.html
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -324,8 +325,11 @@ index.html
   <script src="script.js"></script>
 </body>
 </html>
-style.css
-* {
+
+---
+# style.css
+
+{
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -661,7 +665,9 @@ manifest.json
     }
   ]
 }
-service-worker.js
+---
+# service-worker.js
+
 const CACHE_NAME = "contacerta-cache-v1";
 
 const ARQUIVOS = [
