@@ -246,7 +246,7 @@ Mantenha o projeto simples e adequado para estudantes iniciantes.
 
 ---
 
-# ⭐ Desafio (Opcional – Vale ponto extra)
+# ⭐ Desafio - Opcional
 
 Utilize uma IA Generativa para implementar **duas melhorias** no jogo e descreva:
 
