@@ -236,36 +236,460 @@ Após a instalação, o **ContaCerta** aparecerá no Menu Iniciar do Windows com
 
 ---
 
-# 🤖 Prompt para IA Generativa
+# 🤖 CODIGOS
 
-Utilize este prompt para auxiliar no desenvolvimento:
+index.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ContaCerta PWA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0f62fe" />
+</head>
+<body>
+  <header>
+    <h1>ContaCerta</h1>
+    <p>Você não vai ter dívidas se cuidar das suas contas.</p>
+  </header>
 
-> Crie uma aplicação PWA chamada **ContaCerta** utilizando HTML, CSS e JavaScript puro.
->
-> O aplicativo deve funcionar como uma agenda financeira instalável.
->
-> Permita cadastrar contas contendo:
->
-> * descrição
-> * valor
-> * categoria
-> * vencimento
-> * forma de pagamento
-> * status
->
-> Utilize localStorage para persistência dos dados.
->
-> Desenvolva uma interface moderna, responsiva e amigável.
->
-> Crie automaticamente:
->
-> * index.html
-> * style.css
-> * script.js
-> * manifest.json
-> * service-worker.js
->
-> O aplicativo deve funcionar como PWA instalada no Windows e Android.
+  <main>
+    <section class="resumo">
+      <div class="card">
+        <h3>Total do mês</h3>
+        <p id="totalMes">R$ 0,00</p>
+      </div>
+      <div class="card verde">
+        <h3>Pagas</h3>
+        <p id="totalPago">R$ 0,00</p>
+      </div>
+      <div class="card laranja">
+        <h3>Em aberto</h3>
+        <p id="totalAberto">R$ 0,00</p>
+      </div>
+      <div class="card vermelho">
+        <h3>Vencidas</h3>
+        <p id="totalVencido">R$ 0,00</p>
+      </div>
+    </section>
+
+    <section class="formulario">
+      <h2>Nova Conta</h2>
+
+      <input type="text" id="descricao" placeholder="Descrição da conta" />
+
+      <select id="categoria">
+        <option>Moradia</option>
+        <option>Água</option>
+        <option>Luz</option>
+        <option>Internet</option>
+        <option>Mercado</option>
+        <option>Saúde</option>
+        <option>Educação</option>
+        <option>Transporte</option>
+        <option>Cartão de Crédito</option>
+        <option>Outros</option>
+      </select>
+
+      <input type="number" id="valor" placeholder="Valor" step="0.01" />
+
+      <input type="date" id="vencimento" />
+
+      <select id="forma">
+        <option>Pix</option>
+        <option>Boleto</option>
+        <option>Cartão de Crédito</option>
+        <option>Cartão de Débito</option>
+        <option>Dinheiro</option>
+        <option>Débito Automático</option>
+        <option>Transferência</option>
+        <option>Outro</option>
+      </select>
+
+      <button onclick="adicionarConta()">Adicionar Conta</button>
+    </section>
+
+    <section class="lista">
+      <h2>Minhas Contas</h2>
+      <div id="listaContas"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Professora Denise Moraes • Atividade com IA Generativa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+style.css
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f8fb;
+  color: #1f2937;
+}
+
+header {
+  background: linear-gradient(135deg, #0f62fe, #22c55e);
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 8px 0 0;
+}
+
+main {
+  width: 95%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card,
+.formulario,
+.lista {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin: 0;
+  color: #475569;
+}
+
+.card p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0f62fe;
+}
+
+.verde p {
+  color: #22c55e;
+}
+
+.laranja p {
+  color: #f97316;
+}
+
+.vermelho p {
+  color: #dc2626;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background: #0f62fe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #0842a0;
+}
+
+.conta {
+  border-left: 6px solid #0f62fe;
+  background: #f8fafc;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+}
+
+.conta.paga {
+  border-left-color: #22c55e;
+}
+
+.conta.vencida {
+  border-left-color: #dc2626;
+}
+
+.conta h3 {
+  margin: 0 0 8px;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.acoes button {
+  flex: 1;
+  margin: 0;
+}
+
+.btn-pago {
+  background: #22c55e;
+}
+
+.btn-excluir {
+  background: #dc2626;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .acoes {
+    flex-direction: column;
+  }
+}
+script.js
+let contas = JSON.parse(localStorage.getItem("contas")) || [];
+
+function salvarLocalStorage() {
+  localStorage.setItem("contas", JSON.stringify(contas));
+}
+
+function formatarMoeda(valor) {
+  return Number(valor).toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL"
+  });
+}
+
+function adicionarConta() {
+  const descricao = document.getElementById("descricao").value;
+  const categoria = document.getElementById("categoria").value;
+  const valor = Number(document.getElementById("valor").value);
+  const vencimento = document.getElementById("vencimento").value;
+  const forma = document.getElementById("forma").value;
+
+  if (!descricao || !valor || !vencimento) {
+    alert("Preencha descrição, valor e vencimento.");
+    return;
+  }
+
+  const conta = {
+    id: Date.now(),
+    descricao,
+    categoria,
+    valor,
+    vencimento,
+    forma,
+    status: "Aberto"
+  };
+
+  contas.push(conta);
+  salvarLocalStorage();
+  limparFormulario();
+  listarContas();
+  atualizarResumo();
+}
+
+function limparFormulario() {
+  document.getElementById("descricao").value = "";
+  document.getElementById("valor").value = "";
+  document.getElementById("vencimento").value = "";
+}
+
+function listarContas() {
+  const lista = document.getElementById("listaContas");
+  lista.innerHTML = "";
+
+  if (contas.length === 0) {
+    lista.innerHTML = "<p>Nenhuma conta cadastrada.</p>";
+    return;
+  }
+
+  contas.forEach(conta => {
+    const vencida = verificarVencida(conta);
+    const div = document.createElement("div");
+
+    div.className = "conta";
+
+    if (conta.status === "Pago") {
+      div.classList.add("paga");
+    } else if (vencida) {
+      div.classList.add("vencida");
+    }
+
+    div.innerHTML = `
+      <h3>${conta.descricao}</h3>
+      <p><strong>Categoria:</strong> ${conta.categoria}</p>
+      <p><strong>Valor:</strong> ${formatarMoeda(conta.valor)}</p>
+      <p><strong>Vencimento:</strong> ${formatarData(conta.vencimento)}</p>
+      <p><strong>Forma:</strong> ${conta.forma}</p>
+      <p><strong>Status:</strong> ${vencida && conta.status !== "Pago" ? "Vencida" : conta.status}</p>
+
+      <div class="acoes">
+        <button class="btn-pago" onclick="marcarComoPaga(${conta.id})">Marcar como paga</button>
+        <button class="btn-excluir" onclick="excluirConta(${conta.id})">Excluir</button>
+      </div>
+    `;
+
+    lista.appendChild(div);
+  });
+}
+
+function marcarComoPaga(id) {
+  contas = contas.map(conta => {
+    if (conta.id === id) {
+      conta.status = "Pago";
+    }
+    return conta;
+  });
+
+  salvarLocalStorage();
+  listarContas();
+  atualizarResumo();
+}
+
+function excluirConta(id) {
+  if (confirm("Deseja excluir esta conta?")) {
+    contas = contas.filter(conta => conta.id !== id);
+    salvarLocalStorage();
+    listarContas();
+    atualizarResumo();
+  }
+}
+
+function verificarVencida(conta) {
+  const hoje = new Date();
+  const vencimento = new Date(conta.vencimento + "T00:00:00");
+
+  hoje.setHours(0, 0, 0, 0);
+
+  return vencimento < hoje && conta.status !== "Pago";
+}
+
+function atualizarResumo() {
+  const hoje = new Date();
+  const mesAtual = hoje.getMonth();
+  const anoAtual = hoje.getFullYear();
+
+  let totalMes = 0;
+  let totalPago = 0;
+  let totalAberto = 0;
+  let totalVencido = 0;
+
+  contas.forEach(conta => {
+    const dataConta = new Date(conta.vencimento + "T00:00:00");
+
+    if (
+      dataConta.getMonth() === mesAtual &&
+      dataConta.getFullYear() === anoAtual
+    ) {
+      totalMes += conta.valor;
+
+      if (conta.status === "Pago") {
+        totalPago += conta.valor;
+      } else if (verificarVencida(conta)) {
+        totalVencido += conta.valor;
+      } else {
+        totalAberto += conta.valor;
+      }
+    }
+  });
+
+  document.getElementById("totalMes").textContent = formatarMoeda(totalMes);
+  document.getElementById("totalPago").textContent = formatarMoeda(totalPago);
+  document.getElementById("totalAberto").textContent = formatarMoeda(totalAberto);
+  document.getElementById("totalVencido").textContent = formatarMoeda(totalVencido);
+}
+
+function formatarData(data) {
+  return new Date(data + "T00:00:00").toLocaleDateString("pt-BR");
+}
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+
+listarContas();
+atualizarResumo();
+manifest.json
+{
+  "name": "ContaCerta",
+  "short_name": "ContaCerta",
+  "description": "Agenda financeira para controle de contas.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f62fe",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+service-worker.js
+const CACHE_NAME = "contacerta-cache-v1";
+
+const ARQUIVOS = [
+  "./",
+  "./index.html",
+  "./style.css",
+  "./script.js",
+  "./manifest.json",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png"
+];
+
+self.addEventListener("install", evento => {
+  evento.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(ARQUIVOS);
+    })
+  );
+});
+
+self.addEventListener("fetch", evento => {
+  evento.respondWith(
+    caches.match(evento.request).then(resposta => {
+      return resposta || fetch(evento.request);
+    })
+  );
+});
+
 
 ---
 
