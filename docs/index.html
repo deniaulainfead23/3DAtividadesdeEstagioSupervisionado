@@ -1,0 +1,230 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>IA na Escola | Letramento em Inteligência Artificial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #16a34a);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    nav {
+      background: #ffffff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      border-left: 6px solid #16a34a;
+      padding-left: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1e40af;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      padding: 5px 8px;
+      margin: 4px 4px 4px 0;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 14px;
+      background: #1e3a8a;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>IA na Escola</h1>
+  <p>Repositório aberto de atividades para o Letramento em Inteligência Artificial no Ensino Médio.</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#trilhas">Trilhas</a>
+  <a href="#atividades">Atividades</a>
+  <a href="#professores">Para professores</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre o projeto</h2>
+  <p>
+    O projeto <strong>IA na Escola</strong> reúne atividades didáticas voltadas ao desenvolvimento do
+    letramento em Inteligência Artificial, pensamento computacional, cultura digital, ética,
+    verificação de informações, engenharia de prompt e uso responsável das tecnologias digitais.
+  </p>
+  <p>
+    As atividades foram organizadas para apoiar professores do Ensino Médio na introdução gradual
+    dos conceitos de Inteligência Artificial, desde a IA clássica até aplicações contemporâneas.
+  </p>
+</section>
+
+<section id="trilhas">
+  <h2>Trilhas de aprendizagem</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Trilha 1 – IA Clássica</h3>
+      <p>Algoritmos, fluxogramas, árvores de decisão, regras IF...THEN e sistemas especialistas.</p>
+      <span class="tag">Pensamento Computacional</span>
+      <span class="tag">Lógica</span>
+    </div>
+
+    <div class="card">
+      <h3>Trilha 2 – IA e Dados</h3>
+      <p>Qualidade dos dados, fontes, vieses, representatividade e tomada de decisão.</p>
+      <span class="tag">Dados</span>
+      <span class="tag">Análise crítica</span>
+    </div>
+
+    <div class="card">
+      <h3>Trilha 3 – IA Generativa</h3>
+      <p>Engenharia de prompt, alucinações, checagem de informação e produção responsável.</p>
+      <span class="tag">Prompt</span>
+      <span class="tag">Verificação</span>
+    </div>
+
+    <div class="card">
+      <h3>Trilha 4 – IA Responsável</h3>
+      <p>Ética, cidadania digital, privacidade, autoria, transparência e impactos sociais da IA.</p>
+      <span class="tag">Ética</span>
+      <span class="tag">Cidadania Digital</span>
+    </div>
+  </div>
+</section>
+
+<section id="atividades">
+  <h2>Atividades disponíveis</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>IA: Verdade ou Alucinação</h3>
+      <p>Atividade para investigar respostas produzidas por IA e verificar a confiabilidade das informações.</p>
+      <p><strong>Tempo:</strong> 50 minutos</p>
+      <p><strong>Série:</strong> Ensino Médio</p>
+      <a class="button" href="../IA_BASE_atividade1.md">Acessar atividade</a>
+    </div>
+
+    <div class="card">
+      <h3>Engenharia de Prompt</h3>
+      <p>Atividade para compreender como a formulação de perguntas influencia as respostas da IA.</p>
+      <p><strong>Tempo:</strong> 50 minutos</p>
+      <p><strong>Série:</strong> Ensino Médio</p>
+      <a class="button" href="../IA_BASE_atividade2.md">Acessar atividade</a>
+    </div>
+
+    <div class="card">
+      <h3>Testando Vieses da IA</h3>
+      <p>Atividade para identificar possíveis vieses em respostas automatizadas.</p>
+      <p><strong>Tempo:</strong> 50 minutos</p>
+      <p><strong>Série:</strong> Ensino Médio</p>
+      <a class="button" href="../IA_BASE_atividade3.md">Acessar atividade</a>
+    </div>
+
+    <div class="card">
+      <h3>Verificação de Fontes</h3>
+      <p>Atividade para desenvolver pesquisa, comparação de fontes e validação de informações.</p>
+      <p><strong>Tempo:</strong> 50 minutos</p>
+      <p><strong>Série:</strong> Ensino Médio</p>
+      <a class="button" href="../IA_BASE_atividade4.md">Acessar atividade</a>
+    </div>
+  </div>
+</section>
+
+<section id="professores">
+  <h2>Para professores</h2>
+  <p>
+    Este material pode ser utilizado em aulas de Computação, Projeto de Vida, Cultura Digital,
+    Robótica, Informática Educativa, Linguagens, Ciências Humanas e áreas integradas.
+  </p>
+
+  <p>
+    Sugestão de uso: escolha uma trilha, aplique uma atividade por semana e finalize com uma
+    roda de conversa sobre os impactos da Inteligência Artificial na vida dos estudantes.
+  </p>
+</section>
+
+<footer>
+  <p>IA na Escola | Repositório aberto de Letramento em Inteligência Artificial</p>
+  <p>Professora Denise Moraes</p>
+</footer>
+
+</body>
+</html>
+```
