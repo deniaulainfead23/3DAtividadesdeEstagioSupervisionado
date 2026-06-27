@@ -1,4 +1,4 @@
-# Atividades de Estágio Supervisionado
+#IA na Escola: atividades abertas de Letramento em Inteligência Artificial para o Ensino Médio.#
 ## As atividades podem ser realizadas dentro da Capacidade de cada aluno
 # 🤖 Letramento e Uso Consciente da Inteligência Artificial
 
